@@ -15,7 +15,9 @@
 1. Open Terminal.
 2. Write git clone https://github.com/hamayun-cpu/re-former.git
 3. Go to the root directory.
-4. Write rails server
+4. Write yarn install
+5. Write bundle install
+6. Write rails server
 
 ## Getting Started
 
