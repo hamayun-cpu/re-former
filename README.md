@@ -10,6 +10,13 @@
 - Rails
 - Active Record
 
+## How to run
+
+1. Open Terminal.
+2. Write git clone https://github.com/hamayun-cpu/re-former.git
+3. Go to the root directory.
+4. Write rails server
+
 ## Getting Started
 
 The project is public.
