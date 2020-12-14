@@ -20,11 +20,14 @@
 <%end%>-->
 
 <%= form_for @user do |f| %>
-  <%=f.label :username, 'UserName:'%>
-  <%= f.text_field :username, placeholder: "Your username" %>
-  <%=f.label :email, 'Email:'%>
-  <%= f.email_field :email, placeholder: "email@gmail.com" %>
-  <%=f.label :password, 'Password:'%>
-  <%= f.password_field :password, placeholder: "your password" %>
-  <%= f.submit %>
+  <% if @user.errors.any? %>
+    <% @user.errors.full_messages.each do |e| %>
+      <%= e %><br>
+    <% end %>
+  <% end %> 
+  <br>
+  Username:<br /> <%= f.text_field :username, placeholder: "your new username" %><br /><br />
+  Email : <br /><%= f.text_field :email,  placeholder: "email@gmail.com" %><br /><br />
+  Password : <br /><%= f.password_field :password, placeholder: "password" %><br /><br />
+  <%= f.submit "Submit" %>
 <% end %>

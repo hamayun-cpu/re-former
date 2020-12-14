@@ -1,0 +1,12 @@
+<%= form_for @user, method: :patch do |f| %>
+   <% if @user.errors.any? %>
+    <% @user.errors.full_messages.each do |e| %>
+      <%= e%><br>
+    <% end %>
+  <% end %> 
+ <br>
+  Username:<br /> <%= f.text_field :username, placeholder: "your new username" %><br /><br />
+  Email : <br /><%= f.text_field :email,  placeholder: "email@gmail.com" %><br /><br />
+  Password : <br /><%= f.password_field :password, placeholder: "password" %><br /><br />
+  <%= f.submit "Update" %>
+<% end %>
