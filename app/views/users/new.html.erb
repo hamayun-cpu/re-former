@@ -1,0 +1,37 @@
+<!--<form accept-charset="UTF-8" action="users_path" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <label for="user[username]">Username</label>
+  <input name="user[username]" type="text" />br><br>
+  <label for="user[email]">Email:</label>
+  <input name="user[email]" type="email" />br><br>
+  <label for="user[password]">Passord:</label>
+  <input name="user[password]" type="password" />br><br>
+  <input type="submit" value="Submit">
+</form>-->
+
+<!--<%=form_tag (users_path) do%>
+  <%=label_tag 'username', 'Username:'%><br>
+  <%=text_field_tag 'username'%><br>
+  <%=label_tag 'email', 'Email:'%><br>
+  <%=email_field_tag 'email'%><br>
+  <%=label_tag 'password', 'Password:'%><br>
+  <%=password_field_tag 'password'%><br>
+  <div><%= submit_tag 'Submit' %></div>
+<%end%>-->
+
+<%= form_for @user do |f| %>
+  <% if @user.errors.any? %>
+    <% @user.errors.full_messages.each do |e| %>
+      <%= e %><br>
+    <% end %>
+  <% end %> 
+  <br>
+  
+  <%= f.label :username, 'Username:' %>
+  <%= f.text_field :username, placeholder: "your new username" %><br /><br />
+  <%= f.label :email, 'Email:' %> 
+  <%= f.email_field :email, placeholder: "email@gmail.com" %><br /><br />
+  <%= f.label :password, 'Password' %>
+  <%= f.password_field :password, placeholder: "password" %><br /><br />
+  <%= f.submit 'Submit'%>
+<% end %>
