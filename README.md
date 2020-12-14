@@ -1,24 +1,31 @@
-# README
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Re-Former
 
-Things you may want to cover:
+> This project is for learning how different tags work for erb templates.
 
-* Ruby version
+## Built With
 
-* System dependencies
+- Ruby
+- Rails
+- Active Record
 
-* Configuration
+## Getting Started
 
-* Database creation
+The project is public.
 
-* Database initialization
+## Authors
 
-* How to run the test suite
+👤 **Hamayun**
 
-* Services (job queues, cache servers, search engines, etc.)
+- Github: [@githubhandle](https://github.com/hamayun-cpu)
+- Twitter: [@twitterhandle](https://twitter.com/hamayun_waheed?s=09&fbclid=IwAR0rfO9cMDDeCX8LfXf4cCNQDrL4LpJ02Q2csWhcT-VtMQ0Cy9EgTB4Wq8E)
+- Linkedin: [linkedin](https://www.linkedin.com/in/hamayun-waheed-3527381b2/)
 
-* Deployment instructions
+## 🤝 Contributing
 
-* ...
+Contributions, issues and feature requests are welcome!
+
+## Show your support
+
+Give a ⭐️ if you like this project!
